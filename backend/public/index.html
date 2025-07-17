@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CECATI 12</title>
+    <link rel="stylesheet" href="./css/tailwind.min.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="py-4 bg-white border-b border-gray-300">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 px-4">
+            <!-- Logo -->
+            <div class="flex justify-center md:justify-end">
+                <img class="h-16" src="./img/education.png" alt="Logo de Secretaria de Educación">
+            </div>
+
+            <!-- Título -->
+            <div class="col-span-2 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold">CECATI 12</h1>
+            </div>
+
+            <!-- Formulario de Folio y Fecha -->
+            <!-- <div class="flex justify-center md:justify-end">
+                <form class="w-full max-w-xs p-4 border rounded-lg shadow-md">
+                    <div class="bg-gray-300 text-gray-800 font-bold text-sm text-center px-3 py-1 border-b border-gray-400">Folio No.</div>
+                    <input type="text" id="folio" class="text-red-500 font-extrabold text-lg text-center w-full border-none focus:outline-none" />
+
+                    <div class="bg-gray-300 text-gray-800 font-bold text-sm text-center px-4 py-1 border-b border-gray-400">FECHA</div>
+                    <div class="grid grid-cols-3 gap-2 text-xs text-gray-800 font-semibold">
+                        <input type="text" id="dia"  placeholder="DIA" class="border-r p-2 text-center w-full focus:outline-none">
+                        <input type="text" id="mes"  placeholder="MES" class="border-r p-2 text-center w-full focus:outline-none">
+                        <input type="text" id="anio"  placeholder="AÑO" class="p-2 text-center w-full focus:outline-none">
+                    </div>
+                </form>
+            </div> -->
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <div class="container mx-auto px-4 md:px-8">
+            <form id="formulario" class="w-full border-2 rounded-lg px-4 py-4 mb-10">
+                <!-- Título -->
+                <div class="border-b-4 bg-gray-300 border-gray-500 w-full text-center pb-2">
+                    <input class="bg-gray-300 uppercase text-3xl w-full text-center focus:outline-none" type="text" placeholder="Estudio Socioeconómico">
+                </div>
+
+                <!-- Objetivo -->
+                <div class="mt-3 p-3 w-full">
+                    <p>Objetivo: Deseamos saber algunos aspectos de nuestra población educativa a fin de conocer las condiciones de su ambiente socioeconómico que nos permita adecuar los programas de capacitación, además de asegurar un servicio de calidad. Solicitamos contestar con veracidad la totalidad de los reactivos, mismos que se utilizaran únicamente con fines estadísticos.</p>
+                </div>
+
+                <!-- Datos del capacitado -->
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-4 p-2">
+                    <div class="flex items-center space-x-2">
+                        <p class="font-bold">I.- Datos del capacitado:</p>
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <label  class="font-bold">No. De Control:</label>
+                        <input id="NoControl" class="border-b focus:outline-none w-full" type="text">
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <label  class="whitespace-nowrap">Nombre:</label>
+                        <input id="nombreAlumno" class="border-b focus:outline-none w-full" type="text">
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <label  class="font-bold">Edad:</label>
+                        <input id="edadAlumno" class="border-b focus:outline-none w-full" type="text">
+                    </div>
+                </div>
+
+                <!-- Sexo y Estado Civil -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-2">
+                    <div class="flex flex-col space-y-2">
+                        <label  class="font-bold">Sexo</label>
+                        <select id="opcionesSexo" class="border p-2 rounded-md w-full">
+                            <option></option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <label  class="font-bold">Estado Civil</label>
+                        <select id="opcionesCivil"  class="border p-2 rounded-md w-full">
+                            <option value="" disabled selected></option>
+                            <option value="Soltero">Soltero</option>
+                            <option value="Casado">Casado</option>
+                            <option value="Viudo">Viudo</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Domicilio -->
+                <div class="p-4">
+                    <div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-3 gap-2">
+                        <label class="font-bold col-span-4">Domicilio:</label>
+                        <input id="calle" type="text" class="border-b  focus:outline-none" placeholder="Calle">
+                        <input id="numeroCalle" type="text" class="border-b w-32 text-center focus:outline-none" placeholder="No.">
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-6  gap-2 mt-4">
+                        <input id="colonia" type="text" class="border-b col-span-2 focus:outline-none" placeholder="Colonia">
+                        <input id="estado" type="text" class="border-b col-span-2 focus:outline-none" placeholder="Estado">
+                        <input id="cp" type="text" class="border-b w-24 text-center" placeholder="C.P">
+                        <input id="telefono" type="text" class="border-b text-center focus:outline-none" placeholder="Teléfono">
+                    </div>
+                </div>
+
+                <!-- Tipo de sangre y discapacidad -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-2">
+                    <div class="flex flex-col space-y-2">
+                        <label  class="font-bold">Tipo de sangre:</label>
+                        <select id="tipoSangre"  class="border p-2 rounded-md w-full">
+                            <option value="" disabled selected></option>
+                            <option value="Tipo A+">Tipo A+</option>
+                            <option value="Tipo A-">Tipo A-</option>
+                            <option value="Tipo B+">Tipo B+</option>
+                            <option value="Tipo B-">Tipo B-</option>
+                            <option value="Tipo AB+">Tipo AB+</option>
+                            <option value="Tipo AB-">Tipo AB-</option>
+                            <option value="Tipo O+">Tipo O+</option>
+                            <option value="Tipo O-">Tipo O-</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <label  class="font-bold">Tipo de discapacidad</label>
+                        <select id="opcionesDiscapacidad"  class="border p-2 rounded-md w-full">
+                            <option></option>
+                            <option value="Visual">Visual</option>
+                            <option value="Auditiva">Auditiva</option>
+                            <option value="Lenguaje">Lenguaje</option>
+                            <option value="Motriz o músculo esquelético">Motriz o músculo esquelético</option>
+                            <option value="Mental">Mental</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <label  class="font-bold">Alergias:</label>
+                        <input id="alergias" class="border-b focus:outline-none w-full" type="text">
+                    </div>
+                </div>
+
+                <!-- Escolaridad -->
+                <div class="py-2 px-2">
+                    <label  class="font-bold">Escolaridad Terminada</label>
+                    <select id="opcionesEscolaridad"  class="border p-2 rounded-md ">
+                        <option></option>
+                        <option value="Primaria Trunca">Primaria Trunca</option>
+                        <option value="Primaria Terminada">Primaria Terminada</option>
+                        <option value="Secundaria Trunca">Secundaria Trunca</option>
+                        <option value="Secundaria Terminada">Secundaria Terminada</option>
+                        <option value="Bachillerato Trunca">Bachillerato Trunca</option>
+                        <option value="Bachillerato Terminada">Bachillerato Terminada</option>
+                        <option value="Licenciatura Trunca">Licenciatura Trunca</option>
+                        <option value="Licenciatura Terminada">Licenciatura Terminada</option>
+                    </select>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4 p-2 mx-10">
+                    <div class="flex items-center space-x-2 w-full">
+                        <p class="font-bold pb-4">III.- Curso Solicitado:</p>
+                    </div>
+                    <div class= "grid lg:grid-cols-3 gap-4">
+                
+                        <!-- Especialidad -->
+                        <div class="flex justify-end space-x-2 pb-6 pr-4">
+                            <label  class=" whitespace-nowrap">Especialidad:</label>
+                            <select id="especialidad"  class="border-b focus:outline-none w-full">
+                                <option value="" disabled selected>Seleccione una especialidad</option>
+                            </select>
+                            <!-- <input id="especialidad" class="border-b focus:outline-none" type="text"> -->
+                        </div>
+                
+                        <!-- Grupo -->
+                        <div class="flex items-center space-x-2 pb-6 pr-4">
+                            <label  class="whitespace-nowrap">Grupo:</label>
+                            <select id="grupo" class="border-b focus:outline-none w-full">
+                                <option value="" disabled selected>Seleccione un grupo</option>
+                            </select>
+                            <!-- <input id="curso" class="border-b focus:outline-none w-full" type="text"> -->
+                        </div>
+                
+                        <!-- Horario -->
+                        <div class="flex justify-end space-x-2 pb-6">
+                            <label  class="whitespace-nowrap ">Horario:</label>
+                            <select id="horario" class="border-b focus:outline-none w-full">
+                                <option value="" disabled selected>Seleccione una Hora</option>
+                            </select>
+                        </div>
+                
+                        <!-- Curso -->
+                        <div class="flex items-center space-x-2 pb-6">
+                            <label  class="whitespace-nowrap ">Curso:</label>
+                            <input id="curso" class="border-b focus:outline-none pr-4 w-full" type="text">
+                        </div>
+                        <!-- Pregunta -->
+                        <div class="flex flex-col space-y-2 lg:col-span-3 space-x-2 pb-6">
+                            <label  class="whitespace-nowrap">¿Cómo se entero de la existencia del CECATI?:</label>
+                            <select id="preguntaCecati"  class="border p-2 rounded-md w-full">
+                                <option value="" disabled selected></option>
+                                <option value="Redes sociales">Redes Sociales (Facebook, Instagram, etc.)</option>
+                                <option value="Publicidad exterior">Publicidad Exterior (Carteles, espectaculares)</option>
+                                <option value="Recomendación">Recomendación (Amigo/Familiar)</option>
+                                <option value="Medios tradicionales">Medios Tradicionales (TV, Radio, Periódico)</option>
+                                <option value="Visita instalaciones">Pasó frente al plantel</option>
+                                <option value="Pláticas escolares">Pláticas escolares/Ferias</option>
+                                <option value="Gobierno">Gobierno/Servicios públicos</option>
+                                <option value="Internet">Internet/Buscadores (Google)</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ocupacion -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4 p-2 mx-10">
+                    <div class="flex items-center space-x-2 pb-3">
+                        <p class="font-bold">IV.- Ocupación</p>
+                    </div>
+                
+                    <div class="py-2 pb-6">
+                        <label >Ocupación</label>
+                        <select class="border border-gray-300 rounded-md p-2" id="opcionesOcupacion" >
+                            <option></option>
+                            <option value="Estudiante">Estudiante</option>
+                            <option value="Obrero">Obrero</option>
+                            <option value="Empleado">Empleado</option>
+                            <option value="Comerciante">Comerciante</option>
+                            <option value="Campesino">Campesino</option>
+                            <option value="Hogar">Hogar</option>
+                        </select>
+                    </div>
+                
+                    <div class="flex flex-col space-y-2 lg:col-span-1 space-x-2 pb-6">
+                        <label  class="whitespace-nowrap">Otro
+                            :</label>
+                        <input id="ocupacionOtro" class="border-b focus:outline-none pr-4 w-full" type="text">
+                    </div>
+                
+                    <div class="flex items-center space-x-2">
+                        <div class="py-2 pb-6 w-1/2 ">
+                            <label >Horario</label>
+                            <select class="border border-gray-300 rounded-md p-2" id="opcionesHorario" >
+                                <option></option>
+                                <option value="Matutino">Matutino</option>
+                                <option value="Vespertino">Vespertino</option>
+                                <option value="Cocturno">Nocturno</option>
+                            </select>
+                        </div>
+                        <div class="py-2 pb-6 w-1/2">
+                            <label >Salario</label>
+                            <select class="border border-gray-300 rounded-md p-2" id="opcionesSalario" >
+                                <option></option>
+                                <option value="Mínimo">Mínimo</option>
+                                <option value="Menos del Minimo">Menos del mínimo</option>
+                                <option value="Mas del Minimo">Más del mínimo</option>
+                            </select>
+                        </div> 
+                    </div>
+                    <div class="flex flex-col space-y-2 lg:col-span-1 space-x-2 pb-6">
+                        <label  class="whitespace-nowrap">Razón social de la empresa:</label>
+                        <input id="razonSocial" class="border-b focus:outline-none pr-4 w-full" type="text">
+                    </div>
+                    <div class="flex flex-col space-y-2 lg:col-span-1 space-x-2 pb-6">
+                        <label  class="whitespace-nowrap">Domicilio de la empresa:</label>
+                        <input id="domicilioEmpresa" class="border-b focus:outline-none pr-4 w-full" type="text">
+                    </div>  
+                </div>
+                
+                <!-- Núcleo Familiar -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4 p-2 mx-10">
+                    <div class="flex items-center space-x-2 w-full">
+                        <p class="font-bold pb-4">V.- Núcleo Familiar:</p>
+                    </div>
+                    <div class= "grid lg:grid-cols-3 gap-4">
+                    
+                        <div class="flex items-center pb-6">
+                            <label class="pr-2" >La casa que habita es:</label>
+                            <select class="border border-gray-300 rounded-md" id="opcionesHogar" >
+                                <option></option>
+                                <option value="Propia">Propia</option>
+                                <option value="Rentada">Rentada</option>
+                            </select>
+                        </div>
+                        <div class="flex items-center pr-4 pb-6">
+                            <label  class="pr-2">Otro: </label>
+                            <input id="hogarOtro" class="border-b focus:outline-none pr-4 w-full" type="text"> 
+                        </div>
+                
+                        <div class="flex items-center space-x-2 pr-4 pb-6">
+                            <label  class=" whitespace-nowrap">¿Cuántas Recamaras?:</label>
+                            <select class="border border-gray-300 rounded-md p-2" id="recamaras" >
+                                <option></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                
+                        <!-- sala -->
+                        <div class="flex items-center pr-4">
+                            <label  class="whitespace-nowrap pr-2">¿Sala?:</label>
+                            <select class="border border-gray-300 rounded-md p-2" id="sala">
+                                <option></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                
+                        <!-- Cocina -->
+                        <div class="flex items-center space-x-2">
+                            <label  class="whitespace-nowrap ">¿Cocina?:</label>
+                            <select class="border border-gray-300 rounded-md p-2" id="cocina">
+                                <option></option>
+                                <option value="Si">Si</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                
+                        <!-- Comedor -->
+                        <div class="flex items-center space-x-2">
+                            <label  class="whitespace-nowrap ">¿Comedor?:</label>
+                            <select class="border border-gray-300 rounded-md p-2" id="comedor">
+                                <option></option>
+                                <option value="Si">Si</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <!-- WC -->
+                        <div class="flex items-center space-x-2 pr-4 mb-10">
+                            <label  class="whitespace-nowrap">¿Servicio de WC?:</label>
+                            <select class="border border-gray-300 rounded-md p-2" id="wc" >
+                                <option></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <form id="formularioGastos">
+                        <!-- Primera tabla: Número de Habitantes -->
+                        <div class="w-full max-w-4xl mx-auto">
+                            <table class="w-full border border-maroon">
+                                <thead>
+                                    <tr class="bg-black text-white font-bold">
+                                        <th colspan="6" class="py-2 px-4 text-left">NÚMERO DE HABITANTES</th>
+                                    </tr>
+                                    <tr class="bg-[#E8C39E] text-black">
+                                        <th class="border border-maroon px-3 py-2">Nombre</th>
+                                        <th class="border border-maroon px-3 py-2">Parentesco</th>
+                                        <th class="border border-maroon px-3 py-2">Edad</th>
+                                        <th class="border border-maroon px-3 py-2">Escolaridad</th>
+                                        <th class="border border-maroon px-3 py-2">Ocupación</th>
+                                        <th class="border border-maroon px-3 py-2">Ingreso Mensual</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="habitantes-body">
+                                    <!-- Filas vacías para rellenar -->
+                                    <tr class="border border-maroon">
+                                        <td><input type="text" class="w-full p-2 border-none outline-none"></td>
+                                        <td><input type="text" class="w-full p-2 border-none outline-none"></td>
+                                        <td><input type="number" class="w-full p-2 border-none outline-none"></td>
+                                        <td><input type="text" class="w-full p-2 border-none outline-none"></td>
+                                        <td><input type="text" class="w-full p-2 border-none outline-none"></td>
+                                        <td><input type="number" class="w-full p-2 border-none outline-none"></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="bg-[#E8C39E] font-bold">
+                                        <td colspan="5" class="px-3 py-2 text-right">TOTAL $</td>
+                                        <td id="total-ingreso" class="px-3 py-2">0</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <button id="agregarFila" type="submit" class="mt-2 bg-green-500 text-white px-4 py-2 rounded">Agregar Fila</button>
+                        </div>
+        
+                       <!-- Segunda tabla: Bienes y Servicios -->
+                        <div id="tabla_bienes_servicios" class="w-full max-w-4xl mx-auto mt-5">
+                            <table id="tabla_principal" class="w-full border border-blue-100">
+                                <thead>
+                                    <tr id="fila_encabezado" class="bg-[#C49A6C] text-white font-bold">
+                                        <th id="titulo_bienes_servicios" colspan="3" class="py-2 px-4 text-left">BIENES Y SERVICIOS</th>
+                                    </tr>
+                                    <tr id="fila_subencabezado" class="bg-[#E8C39E] text-black">
+                                        <th id="columna_descripcion" class="border border-maroon px-3 py-2">En su domicilio cuenta con:</th>
+                                        <th id="columna_si" class="border border-maroon px-3 py-2 text-center">Sí</th>
+                                        <th id="columna_no" class="border border-maroon px-3 py-2 text-center">No</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id="fila_lavadora" class="border border-maroon">
+                                        <td id="item_lavadora" class="px-3 py-2">Lavadora Automática</td>
+                                        <td class="text-center"><input id="lavadora_si" type="radio" name="lavadora" value="Si"></td>
+                                        <td class="text-center"><input id="lavadora_no" type="radio" name="lavadora" value="No"></td>
+                                    </tr>
+                                    <tr id="fila_celular" class="border border-maroon">
+                                        <td id="item_celular" class="px-3 py-2">Teléfono Celular</td>
+                                        <td class="text-center"><input id="celular_si" type="radio" name="celular" value="Si"></td>
+                                        <td class="text-center"><input id="celular_no" type="radio" name="celular" value="No"></td>
+                                    </tr>
+                                    <tr id="fila_computadora" class="border border-maroon">
+                                        <td id="item_computadora" class="px-3 py-2">Computadora Personal</td>
+                                        <td class="text-center"><input id="computadora_si" type="radio" name="computadora" value="Si"></td>
+                                        <td class="text-center"><input id="computadora_no" type="radio" name="computadora" value="No"></td>
+                                    </tr>
+                                    <tr id="fila_automovil" class="border border-maroon">
+                                        <td id="item_automovil" class="px-3 py-2">Automóvil</td>
+                                        <td class="text-center"><input id="automovil_si" type="radio" name="automovil" value="Si"></td>
+                                        <td class="text-center"><input id="automovil_no" type="radio" name="automovil" value="No"></td>
+                                    </tr>
+                                    <tr id="fila_calentador" class="border border-maroon">
+                                        <td id="item_calentador" class="px-3 py-2">Calentador de Gas</td>
+                                        <td class="text-center"><input id="calentador_si" type="radio" name="calentador" value="Si"></td>
+                                        <td class="text-center"><input id="calentador_no" type="radio" name="calentador" value="No"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+        
+        
+                        <!-- Sección de Distribución de Gastos Mensuales -->
+                        <div class="w-full max-w-4xl mx-auto mt-5 border border-maroon p-4">
+                            <h2 class="font-bold">VI.- Distribución de gastos mensuales:</h2>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div id="gasto_predial">Predial: 
+                                    <input type="number" class="pl-1 border-b border-black" id="input_predial">
+                                </div>
+                                <div id="gasto_luz">Luz: 
+                                    <input type="number" class="pl-1 border-b border-black" id="input_luz">
+                                </div>
+                                <div id="gasto_alimentacion">Alimentación: 
+                                    <input type="number" class="pl-1 border-b border-black" id="input_alimentacion">
+                                </div>
+                                <div id="gasto_renta">Renta: 
+                                    <input type="number" class="pl-1 border-b border-black" id="input_renta">
+                                </div>
+                                <div id="gasto_agua">Agua: 
+                                    <input type="number" class="pl-1 border-b border-black" id="input_agua">
+                                </div>
+                                <div id="gasto_transporte">Transporte: 
+                                    <input type="number" class="pl-1 border-b border-black" id="input_transporte">
+                                </div>
+                                <div id="gasto_telefono">Teléfono: 
+                                    <input type="number" class="pl-1 border-b border-black" id="input_telefono">
+                                </div>
+                                <div id="gasto_gas">Gas: 
+                                    <input type="number" class="pl-1 border-b border-black" id="input_gas">
+                                </div>
+                                <div id="gasto_vestido">Vestido: 
+                                    <input type="number" class="pl-1 border-b border-black" id="input_vestido">
+                                </div>
+                                <div id="gasto_educacion">Educación: 
+                                    <input type="number" class="pl-1 border-b border-black" id="input_educacion">
+                                </div>
+                                <div id="gasto_diversiones">Diversiones: 
+                                    <input type="number" class="pl-1 border-b border-black" id="input_diversiones">
+                                </div>
+                                <div id="gasto_otros">Otros: 
+                                    <input type="number" class="pl-1 border-b border-black" id="input_otros">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <p class="mt-2">¿Cuenta con servicio médico?: 
+                                        <select id="servicio_medico">
+                                            <option value=""></option>
+                                            <option value="NO">No</option>
+                                            <option value="IMSS">IMSS</option>
+                                            <option value="ISSSTE">ISSSTE</option>
+                                            <option value="SSA">SSA</option>
+                                        </select>
+                                    </p>
+                                </div>
+                            </div>    
+                        </div>
+        
+                        <!-- Sección de Actividades del Plantel -->
+                        <div class="w-full max-w-4xl mx-auto mt-5 border border-maroon p-4">
+                            <h2 class=" pb-2 font-bold">VII.- Actividades del plantel:</h2>
+                            <p class="pb-2">¿Existe relación entre la especialidad y su trabajo? 
+                                <select id="relacion_trabajo">
+                                    <option value=></option>
+                                    <option value="Si">Sí</option>
+                                    <option value="No">No</option>
+                                    <option value="No Trabaja">No trabaja</option>
+                                </select>
+                            </p>
+                            <p class="pb-2">¿Obtendrá beneficios con esta capacitación? 
+                                <select id="beneficios_capacitacion">
+                                    <option value=></option>
+                                    <option value="Si">Sí</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </p>
+                            <p class="pb-2">¿Cuál es el motivo de su participación en esta capacitación? </p>
+                             <textarea class="w-full border border-black" rows="2" id="motivo_participacion"> </textarea>
+                            <!-- <p class="text-center mt-4 border-t border-black w-1/2 mx-auto">Nombre y Firma del Alumno</p> -->
+                        </div>
+        
+                        <!-- Sección de Observaciones -->
+                        <div class="w-full max-w-4xl mx-auto mt-5 border border-maroon p-4">
+                            <h2 class="font-bold">VIII.- Observaciones:</h2>
+                            <textarea class="w-full border border-black mt-2" rows="2" id="observaciones"> </textarea>
+                          
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                              <div class="flex flex-col md:flex-row items-start md:items-center gap-1">
+                                <label for="input_porcentaje_autorizado" class="whitespace-nowrap">Porcentaje autorizado:</label>
+                                <input type="text" class="border-b border-black w-full md:w-auto" id="input_porcentaje_autorizado">
+                              </div>
+                              <div class="flex flex-col md:flex-row items-start md:items-center gap-1">
+                                <label for="input_no_baucher" class="whitespace-nowrap">No. Baucher: </label>
+                                <input type="text" class="border-b border-black w-full md:w-auto" id="input_no_baucher"> 
+                              </div>
+                              <div class="flex flex-col md:flex-row items-start md:items-center gap-1">
+                                <label for="input_becas_autorizadas" class="whitespace-nowrap">Becas autorizadas: </label>
+                                <input type="text" class="border-b border-black w-full md:w-auto" id="input_becas_autorizadas"> 
+                              </div>
+                            </div>
+                          
+                            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-6">
+                              <div class="text-center">
+                                <label class="whitespace-nowrap block mb-1">Aplicador:</label>
+                                <select class="border border-gray-300 rounded-md p-2 w-full sm:w-auto" id="aplicador">
+                                  <option></option>
+                                  <option value="Pedro Solis">Pedro Solis</option>
+                                  <option value="Pilar Mercado">Pilar Mercado</option>
+                                  <option value="Delaia Arellano">Delaia Arellano</option>
+                                  <option value="Mauricio Vela">Mauricio Vela</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          
+        
+                        <div class="mt-6 flex justify-center pb-4">
+                            <input id="guardar-alumno" type="submit" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400" value="Guardar Datos">
+                        </div>
+                    </form>
+                </div>
+            </form>
+        </div>
+
+   
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4 text-center">
+        <p>&copy; 2025 CECATI 12. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+{
+  "especialidades": [
+    {
+      "especialidad": "SOPORTE A INSTALACIONES ELÉCTRICAS Y MOTORES ELÉCTRICOS",
+      "grupos": [
+        {
+          "nombre": "SIEME-1",
+          "horarios": ["07:00 - 11:00"]
+        },
+        {
+          "nombre": "SIEME-2",
+          "horarios": ["08:00 - 11:30"]
+        },
+        {
+          "nombre": "SIEME-3",
+          "horarios": ["11:30 - 15:00"]
+        },
+        {
+          "nombre": "SIEME-4",
+          "horarios": ["16:00 - 20:00"]
+        },
+        {
+          "nombre": "SIEME-5",
+          "horarios": ["08:00 - 12:00"]
+        },
+        {
+          "nombre": "SIEME-6",
+          "horarios": ["10:00 - 14:00", "10:00 - 15:00"]
+        },
+        {
+          "nombre": "SIEME-7",
+          "horarios": ["16:30 - 20:30"]
+        },
+        {
+          "nombre": "SIEME-8",
+          "horarios": ["08:00 - 11:00", "11:00 - 14:00"]
+        }
+      ]
+    },
+    {
+      "especialidad": "SOPORTE TÉCNICO A EQUIPOS Y SISTEMAS COMPUTACIONALES",
+      "grupos": [
+        {
+          "nombre": "STESC-1",
+          "horarios": ["09:00 - 13:00"]
+        },
+        {
+          "nombre": "STESC-2",
+          "horarios": ["08:00 - 12:00"]
+        }
+      ]
+    },
+    {
+      "especialidad": "DISEÑO E IMAGEN DE LA CARROCERIA",
+      "grupos": [
+        {
+          "nombre": "*DIC-1",
+          "horarios": ["08:00 - 12:00"]
+        },
+        {
+          "nombre": "*DIC-2",
+          "horarios": ["16:00 - 20:00"]
+        },
+        {
+          "nombre": "*DIC-3",
+          "horarios": ["08:00 - 12:00"]
+        },
+        {
+          "nombre": "*DIC-4",
+          "horarios": ["14:00 - 17:00", "17:00 - 20:00"]
+        },
+        {
+          "nombre": "*DIC-5",
+          "horarios": ["15:00 - 18:00 EN LINEA", "18:00 - 21:00 EN LINEA"]
+        }
+      ]
+    },
+    {
+      "especialidad": "DISEÑO DE MODA",
+      "grupos": [
+        {
+          "nombre": "DM-1",
+          "horarios": ["07:00 - 09:00", "09:00 - 11:00"]
+        },
+        {
+          "nombre": "DM-2",
+          "horarios": ["07:00 - 11:00"]
+        },
+        {
+          "nombre": "DM-3",
+          "horarios": ["08:00 - 12:00"]
+        },
+        {
+          "nombre": "DM-4",
+          "horarios": ["08:00 - 11:00", "11:00 - 14:00"]
+        }
+      ]
+    },
+    {
+      "especialidad": "CONFECCIÓN DE PRENDAS DE VESTIR",
+      "grupos": [
+        {
+          "nombre": "CPV-1",
+          "horarios": ["08:00 - 12:00"]
+        },
+        {
+          "nombre": "CPV-2",
+          "horarios": ["08:00 - 13:00"]
+        }
+      ]
+    },
+    {
+      "especialidad": "ELABORACIÓN Y RESTAURACIÓN DE ARTESANÍAS DE MADERA",
+      "grupos": [
+        {
+          "nombre": "ERAM-1",
+          "horarios": ["08:00 - 10:00", "10:00 - 12:00"]
+        },
+        {
+          "nombre": "ERAM-2",
+          "horarios": ["08:00 - 12:00"]
+        }
+      ]
+    },
+    {
+      "especialidad": "DISEÑO Y FABRICACIÓN DE MUEBLES DE MADERA",
+      "grupos": [
+        {
+          "nombre": "DFMM-1",
+          "horarios": ["08:00 - 12:00"]
+        },
+        {
+          "nombre": "DFMM-2",
+          "horarios": ["16:00 - 20:00"]
+        }
+      ]
+    },
+    {
+      "especialidad": "TAPICERIA",
+      "grupos": [
+        {
+          "nombre": "T-1",
+          "horarios": ["08:00 - 12:00"]
+        },
+        {
+          "nombre": "T-2",
+          "horarios": ["14:00 - 17:00", "17:00 - 20:00"]
+        },
+        {
+          "nombre": "T-3",
+          "horarios": ["15:00 - 18:00 EN LINEA", "18:00 - 21:00 EN LINEA"]
+        }
+      ]
+    },
+    {
+      "especialidad": "INFORMÁTICA",
+      "grupos": [
+        {
+          "nombre": "I-1",
+          "horarios": ["07:00 - 11:00"]
+        },
+        {
+          "nombre": "I-2",
+          "horarios": ["08:00 - 12:00"]
+        },
+        {
+          "nombre": "I-3",
+          "horarios": ["11:30 - 15:00"]
+        },
+        {
+          "nombre": "I-4",
+          "horarios": ["16:00 - 20:00"]
+        },
+        {
+          "nombre": "I-5",
+          "horarios": ["08:00 - 12:00"]
+        },
+        {
+          "nombre": "I-6",
+          "horarios": ["10:00 - 14:00", "10:00 - 15:00"]
+        },
+        {
+          "nombre": "I-7",
+          "horarios": ["16:30 - 20:30"]
+        },
+        {
+          "nombre": "*I-8",
+          "horarios": ["08:00 - 11:00", "11:00 - 14:00"]
+        }
+      ]
+    },
+    {
+      "especialidad": "ADMINISTRACIÓN",
+      "grupos": [
+        {
+          "nombre": "A-1",
+          "horarios": ["09:00 - 13:00"]
+        },
+        {
+          "nombre": "A-2",
+          "horarios": ["08:00 - 12:00"]
+        },
+        {
+          "nombre": "A-3",
+          "horarios": ["16:00 - 20:00"]
+        }
+      ]
+    },
+    {
+      "especialidad": "ASISTENCIA EDUCATIVA INICIAL Y PREESCOLAR",
+      "grupos": [
+        {
+          "nombre": "AEIP-1",
+          "horarios": ["08:00 - 12:00"]
+        },
+        {
+          "nombre": "AEIP-2",
+          "horarios": ["14:00 - 17:00", "17:00 - 20:00"]
+        }
+      ]
+    },
+    {
+      "especialidad": "SOLDADURA Y PAILERÍA",
+      "grupos": [
+        {
+          "nombre": "SP-1",
+          "horarios": ["07:00 - 11:00"]
+        },
+        {
+          "nombre": "SP-2",
+          "horarios": ["08:00 - 12:00"]
+        },
+        {
+          "nombre": "SP-3",
+          "horarios": ["11:30 - 15:00"]
+        },
+        {
+          "nombre": "SP-4",
+          "horarios": ["16:00 - 20:00"]
+        }
+      ]
+    },
+    {
+      "especialidad": "ESTILISMO Y DISEÑO DE IMAGEN",
+      "grupos": [
+        {
+          "nombre": "EDI-1",
+          "horarios": ["08:00 - 12:00"]
+        },
+        {
+          "nombre": "EDI-2",
+          "horarios": ["14:00 - 17:00", "17:00 - 20:00"]
+        },
+        {
+          "nombre": "EDI-3",
+          "horarios": ["15:00 - 18:00 EN LINEA", "18:00 - 21:00 EN LINEA"]
+        }
+      ]
+    },
+    {
+      "especialidad": "USO DE LA LENGUA INGLÉSA EN DIVERSOS CONTEXTOS",
+      "grupos": [
+        {
+          "nombre": "ULIDC-1",
+          "horarios": ["07:00 - 11:00"]
+        },
+        {
+          "nombre": "ULIDC-2",
+          "horarios": ["08:00 - 12:00"]
+        },
+        {
+          "nombre": "ULIDC-3",
+          "horarios": ["11:30 - 15:00"]
+        }
+      ]
+    }
+  ]
+}
