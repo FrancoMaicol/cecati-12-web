@@ -58,7 +58,7 @@ export default function Header() {
         <nav className="flex justify-evenly text-white">
           <Link to="/caed">CAED</Link>
           <Link to="/especialidades">Especialidades</Link>
-          <Link href="#">Contacto</Link>
+          <Link to="/contacto">Contacto</Link>
           <Link href="#">Correo</Link>
         </nav>
       </div>
