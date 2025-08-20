@@ -8,30 +8,29 @@ import inscripcion from '../../assets/body/inscripcion.png'
 import ubicacion from '../../assets/body/ubicacion.png'
 import sol from '../../assets/body/sol.jpg'
 
-const img = [CAED, vision, mision, caracteristicas, discapacidad, inscripcion, ubicacion, sol ]
 
 export default function Carrusel() {
-    const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(0);
+  const img = [CAED, vision, mision, caracteristicas, discapacidad, inscripcion, ubicacion, sol ];
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setIndex((prevIndex) => (prevIndex + 1) % img.length);
-        }, 3000)
-        return () => clearInterval(interval)
-    }, [])
-
-    return(
-        <div className='h-[500px] md:h[600px] overflow-hidden relative w-full'>
-            <div className='flex transition-transform duration-700 ease-in-out w-full h-full' style={{ transform: `translateX(-${index * 100}%)`, width: `${img.length * 100}%`}}>
-                {img.map((src, i) => (
-                    <div key={i} className='w-full  h-full flex-shrink-0'>
-                        <img src={src} className='w-full h-full object-cover' />
-                    </div>
-                ))}
-            </div>
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % img.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [])
+    return( 
+     <div className='carousel w-full'>
+      {img.map((src, i) => {
+        return(
+          <div 
+          key={i}
+          className={`carousel-item w-full ${i === index ? "block" : "hidden" }`}
+        >
+          <img src={src} className='w-full h-auto' alt="Imagenes de carrusel" />
         </div>
-
-        
-
+        )
+      })}
+     </div>
     )
-} 
+}

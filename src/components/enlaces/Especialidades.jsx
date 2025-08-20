@@ -12,7 +12,6 @@ import ingles from '../../assets/especialidades/ingles.png'
 import soldadura from '../../assets/especialidades/soldadura.png'
 import tapiceria from '../../assets/especialidades/tapiceria.png' 
 
-
 export default function Especialidades() {
     
     // const cursos = [
@@ -160,7 +159,7 @@ export default function Especialidades() {
       className="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-[#A48138] dark:border-gray-700"
     >
       <img
-        className="rounded-t-lg h-40 w-full object-cover"
+        className=" rounded-t-lg w-full object-contain "
         src={item.img}
         alt={`Imagen de ${item.nombre}`}
       />

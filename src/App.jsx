@@ -4,7 +4,7 @@ import Body from "./components/body/Body";
 import Caed from "./components/enlaces/Caed";
 import Especialidades from "./components/enlaces/Especialidades";
 import Contacto from "./components/enlaces/Contacto";
-Especialidades
+// Especialidades
 
 function App() {
   return (

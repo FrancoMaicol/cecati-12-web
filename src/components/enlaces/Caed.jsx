@@ -11,7 +11,7 @@ export default function Caed() {
     return (
         <main className="mt-10">
             <Carrusel/>
-            <h1 className='mt-100 text-6xl text-center font-bold mb-10'>¿Quiénes Somos?</h1>
+            <h1 className='mt-10 text-6xl text-center font-bold mb-10'>¿Quiénes Somos?</h1>
             <div className='flex flex-col md:flex-row items-center justify-center gap-6 mb-10 px-6'>
                 <div className=' md:w-1/2 flex justify-center'>
                     <img src={CAED} alt="Logo CAED" className='max-w-lg w-full h-auto rounded-lg shadow-md'/>
